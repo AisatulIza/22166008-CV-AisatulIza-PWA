@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Portofolio</label>
+      <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="home">
+      <div class="content">
+        <h1>I'm <b class="scroll-text">A'isatul Iza</b></h1>
+        <p>Student majoring in Information Systems</p>
+        <div class="social-icons">
+          <a href="mailto:izaaisatull@gmail.com" target="_blank">
+            <i class="fas fa-envelope" style="font-size: 30px"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/aisatull04/profilecard/?igsh=dnR1bmxwM2lwMjlw"
+            target="_blank"
+          >
+            <i class="fab fa-instagram" style="font-size: 30px"></i>
+          </a>
+          <a href="https://wa.me/6285225359543" target="_blank">
+            <i class="fab fa-whatsapp" style="font-size: 30px"></i>
+          </a>
+          <a href="https://github.com/AisatulIza" target="_blank">
+            <i class="fab fa-github" style="font-size: 30px"></i>
+          </a>
+        </div>
+        <!-- Download CV Button -->
+        <a href="CV_IZA.pdf" download class="download-button"
+          ><b>Download CV</b></a
+        >
+      </div>
+      <div class="photo">
+        <img src="images/zz.png" alt="Your Photo" />
+      </div>
+    </div>
+    <section id="about">
+      <div class="about-section">
+        <div class="about-text">
+          <br />
+          <h2><b>About Me</b></h2>
+          <br />
+          <p>
+            Hello! My name is A'isatul iza, a student majoring in Information
+            Systems. I have an interest in web development and data science
+            analysis. Currently, I am studying at STMIK YMI Tegal, where I have
+            learned various basic concepts in information systems, including
+            software development, database management, and systems analysis,
+            which helped me understand how technology can improve business
+            processes. I have skills in web development using HTML, CSS, and
+            JavaScript, and am learning data analysis with R, Python, and SQL to
+            process and analyze information effectively.
+          </p>
+        </div>
+        <div class="sertifikat">
+          <h2><b>My Sertifikat</b></h2>
+          <br />
+          <div class="ser-galery">
+            <img src="images/ser1.jpg" alt="sertifikat 1" />
+            <img src="images/ser2.jpg" alt="sertifikat 2" />
+            <img src="images/ser3.jpg" alt="sertifikat 3" />
+            <img src="images/ser4.jpg" alt="sertifikat 4" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h2><b>Projects</b></h2>
+      <br />
+      <div class="project-gallery">
+        <img src="images/CRUD.png" alt="Project 1" />
+        <img src="images/data.png" alt="Project 2" />
+        <img src="images/from.png" alt="Project 3" />
+        <img src="images/toko.png" alt="Project 4" />
+      </div>
+    </section>
+    <section id="contact">
+      <h2><b>Contact Me</b></h2>
+      <br />
+      <br />
+      <form id="contact-form">
+        <div class="input-group">
+          <div class="input-field">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Masukkan Nama"
+              required
+            />
+            <label for="name"></label>
+          </div>
+          <div class="input-field">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Masukkan Email"
+              required
+            />
+            <label for="email"></label>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-field">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Masukkan No.Hp"
+              required
+            />
+            <label for="phone"></label>
+          </div>
+          <div class="input-field">
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Masukkan subjek"
+              required
+            />
+            <label for="subject"></label>
+          </div>
+        </div>
+        <div class="input-field">
+          <textarea
+            id="pessan"
+            name="pessan"
+            rows="4"
+            placeholder="Masukkan pesan"
+            required
+          ></textarea>
+          <label for="message"></label><br />
+        </div>
+        <button type="submit"><b>Send Message</b></button>
+      </form>
+    </section>
+    <div class="copyraight"><br />&copy; 2024 Web Portofolio</div>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("service-worker.js")
+          .then((registration) => {
+            console.log(
+              "Service Worker registered with scope:",
+              registration.scope
+            );
+          })
+          .catch((error) => {
+            console.error("Service Worker registration failed:", error);
+          });
+      }
+    </script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+      import {
+        getMessaging,
+        getToken,
+      } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBX1zH3tqOO1jTbU4ge9CHgqOoU3pVerm0",
+        authDomain: "cvportofolio-e156d.firebaseapp.com",
+        projectId: "cvportofolio-e156d",
+        storageBucket: "cvportofolio-e156d.firebasestorage.app",
+        messagingSenderId: "871829475917",
+        appId: "1:871829475917:web:0a2b2b5f658a336a938204",
+        measurementId: "G-PEMC88LRQK"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const messaging = getMessaging(app);
+
+      navigator.serviceWorker
+        .register("service-worker.js")
+        .then((registration) => {
+          getToken(messaging, {
+            serviceWorkerRegistration: registration,
+            vapidKey:
+              "BAR-g5V89fsSaq_lbkJK47unR6hRg3mxalUYq3nk5I8ueMIqJ5J5EV5wHKJzQg3tBD7HsUb9S77moeRA59arN8g",
+          })
+            .then((currentToken) => {
+              if (currentToken) {
+                console.log("Token is: " + currentToken);
+                // Send the token to your server and update the UI if necessary
+                // ...
+              } else {
+                // Show permission request UI
+                console.log(
+                  "No registration token available. Request permission to generate one."
+                );
+                // ...
+              }
+            })
+            .catch((err) => {
+              console.log("An error occurred while retrieving token. ", err);
+              // ...
+            });
+        });
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
