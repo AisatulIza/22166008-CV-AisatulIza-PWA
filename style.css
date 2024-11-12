@@ -312,15 +312,15 @@ h2 {
 @media (max-width: 480px) {
   /* Font dan spasi lebih kecil untuk layar sangat kecil */
   h1, h2 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 
   p {
-    font-size: 0.9em;
+    font-size: 0.9rem;
   }
   
   .download-button {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     padding: 8px 12px;
   }
   
