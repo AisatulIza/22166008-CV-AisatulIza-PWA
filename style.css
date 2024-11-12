@@ -321,7 +321,7 @@ h2 {
     font-size: 0.9rem;
   }
   
-  .download-button, #contact-form button {
+  .download-button {
     font-size: 0.9rem;
     padding: 8px 12px;
   }
@@ -334,6 +334,13 @@ h2 {
 
   .ser-galery img {
     max-width: 100%; /* Menampilkan gambar secara penuh (satu kolom) pada layar sangat kecil */
+  }
+  #contact button {
+    font-size: 1rem; /* Ukuran font lebih kecil */
+    padding: 8px 16px; /* Padding lebih kecil */
+    max-width: 70%; /* Tombol memenuhi lebar kontainer */
+    width: 90%; /* Mengurangi lebar tombol untuk memberi jarak di sisi */
+    margin: 0 auto; /* Menjaga tombol tetap berada di tengah */
   }
 }
   
