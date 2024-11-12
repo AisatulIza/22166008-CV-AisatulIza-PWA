@@ -248,8 +248,9 @@ h2 {
     text-align: center;
   }
   .scroll-text {
+    color: #FFA500;
     font-size: 3rem;
-  }
+  } 
   .about-section {
     display: flex;
     flex-direction: column; /* Ubah arah menjadi kolom saat layar kecil */
@@ -313,9 +314,6 @@ h2 {
   
 @media (max-width: 480px) {
   /* Font dan spasi lebih kecil untuk layar sangat kecil */
-  .scroll-text {
-    font-size: 2rem;
-  }
   p {
     font-size: 0.9rem;
   }
