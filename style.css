@@ -336,7 +336,7 @@ h2 {
     max-width: 100%; /* Menampilkan gambar secara penuh (satu kolom) pada layar sangat kecil */
   }
   #contact button {
-    font-size: 1rem; /* Ukuran font lebih kecil */
+    font-size: 0,9rem; /* Ukuran font lebih kecil */
     padding: 8px 16px; /* Padding lebih kecil */
     max-width: 70%; /* Tombol memenuhi lebar kontainer */
     width: 90%; /* Mengurangi lebar tombol untuk memberi jarak di sisi */
