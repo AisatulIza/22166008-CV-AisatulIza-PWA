@@ -317,7 +317,7 @@ h2 {
   h1, h2, .about-text h2 {
     font-size: 1.2rem;
   }
-  p {
+  p, .about-text p {
     font-size: 0.9rem;
   }
   
