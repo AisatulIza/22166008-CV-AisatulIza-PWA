@@ -338,7 +338,7 @@ h2 {
   #contact button {
     font-size: 0,9rem; /* Ukuran font lebih kecil */
     padding: 8px 16px; /* Padding lebih kecil */
-    max-width: 70%; /* Tombol memenuhi lebar kontainer */
+    max-width: 100%; /* Tombol memenuhi lebar kontainer */
     width: 90%; /* Mengurangi lebar tombol untuk memberi jarak di sisi */
     margin: 0 auto; /* Menjaga tombol tetap berada di tengah */
   }
