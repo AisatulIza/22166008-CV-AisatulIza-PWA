@@ -321,7 +321,7 @@ h2 {
     font-size: 0.9rem;
   }
   
-  .download-button {
+  .download-button, #contact button {
     font-size: 0.9rem;
     padding: 8px 12px;
   }
