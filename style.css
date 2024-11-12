@@ -247,7 +247,9 @@ h2 {
     align-items: center;
     text-align: center;
   }
-  
+  .scroll-text {
+    font-size: 3rem;
+  }
   .about-section {
     display: flex;
     flex-direction: column; /* Ubah arah menjadi kolom saat layar kecil */
