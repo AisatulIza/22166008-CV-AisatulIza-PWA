@@ -314,6 +314,9 @@ h2 {
   
 @media (max-width: 480px) {
   /* Font dan spasi lebih kecil untuk layar sangat kecil */
+  h1, h2 {
+    font-size: 1.2rem;
+  }
   p {
     font-size: 0.9rem;
   }
